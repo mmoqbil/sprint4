@@ -99,7 +99,7 @@ function breakIfFive() {
 // 5. Napisz funkcję, która użyje pętli for in do iteracji po właściwościach obiektu
 function iterateAfterObject(object) {
     for (const key in object) {
-        console.log(key);
+        console.log(object[key]);
     }
 }
 
