@@ -28,7 +28,7 @@ function area(a) {
 
 // 5. Napisz funkcję zwracającą odwrotność liczby
 function reciprocal(a) {
-    return -a;
+    return 1/a;
 }
 
 // 6. Napisz funkcję konwertującą stopnie Celsjusza na Fahrenheita
