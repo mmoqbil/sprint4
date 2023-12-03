@@ -79,10 +79,10 @@ function evenLowerThan20() {
 // 3. Napisz funkcję, która użyje pętli do while do wyświetlenia liczb od 10 do 1
 function tenToOne() {
     let number = 10;
-    while(number>0) {
+    do {
         console.log(number);
         number--;
-    }
+    } while(number>0) 
 }
 
 // 4. Napisz funkcję, która użyje pętli while i break do przerwania pętli po osiągnięciu liczby 5
