@@ -28,7 +28,7 @@ function area(a) {
 
 // 5. Napisz funkcję zwracającą odwrotność liczby
 function reciprocal(a) {
-    return -a;
+    return 1/a;
 }
 
 // 6. Napisz funkcję konwertującą stopnie Celsjusza na Fahrenheita
@@ -79,10 +79,10 @@ function evenLowerThan20() {
 // 3. Napisz funkcję, która użyje pętli do while do wyświetlenia liczb od 10 do 1
 function tenToOne() {
     let number = 10;
-    while(number>0) {
+    do {
         console.log(number);
         number--;
-    }
+    } while(number>0) 
 }
 
 // 4. Napisz funkcję, która użyje pętli while i break do przerwania pętli po osiągnięciu liczby 5
@@ -99,7 +99,7 @@ function breakIfFive() {
 // 5. Napisz funkcję, która użyje pętli for in do iteracji po właściwościach obiektu
 function iterateAfterObject(object) {
     for (const key in object) {
-        console.log(key);
+        console.log(object[key]);
     }
 }
 
