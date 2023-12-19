@@ -94,7 +94,7 @@ displayIntroduceFunction(people);
 
 const colors = ["red", "green", "yellow", "blue", "pink", "orange"];
 
-function getColor(number, person) {
+function getColor(person, number) {
   if (number < 1) {
     return `podałeś za małą liczbę, liczba nie może być mniejsza niż 1`;
   } else if (number > 30) {
@@ -111,14 +111,18 @@ function getColor(number, person) {
   return Math.abs((keysPlusValues - number) % colors.length);
 }
 
-function getColorForEachPerson(number, people) {
+function getColorForEachPerson(people, number) {
   people.forEach((person) => {
-    console.log(
-      `Mam na imię ${person.firstname} i mój ulubiony kolor to ${
-        colors[getColor(number, person)]
-      }`
-    );
+    if (typeof getColor(person, number) == "number") {
+      console.log(
+        `Mam na imię ${person.firstname} i mój ulubiony kolor to ${
+          colors[getColor(person, number)]
+        }`
+      );
+    } else {
+      console.log(getColor(person, number));
+    }
   });
 }
 
-getColorForEachPerson(5, people);
+getColorForEachPerson(people);
